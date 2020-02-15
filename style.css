@@ -3,14 +3,24 @@
   padding: 0px;
   box-sizing: border-box;
 }
-
 body {
   font-family: 'Poppins', sans-serif;
 }
-
 header{
   display: flex;
   background-color: lightblue;
   width: 90%;
   margin: auto;
+}
+.logo-container{
+  background: lightblue;
+  flex: 1;
+}
+nav{
+  background: lightcyan;
+  flex: 2;
+}
+.cart{
+  background: yellowgreen;
+  flex: 1;
 }
