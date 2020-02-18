@@ -8,19 +8,30 @@ body {
 }
 header{
   display: flex;
-  background-color: lightblue;
   width: 90%;
   margin: auto;
 }
+.logo-container, .nav-links, .cart{
+  display: flex;
+}
 .logo-container{
-  background: lightblue;
   flex: 1;
 }
+.logo{
+  font-weight: 5px;
+  margin: 5px;
+}
 nav{
-  background: lightcyan;
   flex: 2;
 }
+.nav-links{
+  justify-content: space-around;
+}
+.nav-link{
+  color: 5f5f79;
+  font-size: 18px;
+  text-decoration: none;
+}
 .cart{
-  background: yellowgreen;
   flex: 1;
 }
