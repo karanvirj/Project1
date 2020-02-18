@@ -3,13 +3,25 @@
   padding: 0px;
   box-sizing: border-box;
 }
+ul{
+  list-style:none;
+  margin:0;
+  padding:0;
+}
+h4{
+  display: flex;
+  align-items: center;
+  color: black;
+}
 body {
   font-family: 'Poppins', sans-serif;
 }
 header{
   display: flex;
   width: 90%;
+  height: 10vh;
   margin: auto;
+  align-items: center;
 }
 .logo-container, .nav-links, .cart{
   display: flex;
@@ -28,10 +40,11 @@ nav{
   justify-content: space-around;
 }
 .nav-link{
-  color: 5f5f79;
+  color: grey;
   font-size: 18px;
   text-decoration: none;
 }
 .cart{
   flex: 1;
+  justify-content: flex-end;
 }
