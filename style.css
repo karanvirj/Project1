@@ -8,10 +8,10 @@ ul{
   margin:0;
   padding:0;
 }
-h4{
+h2{
   display: flex;
   align-items: center;
-  color: black;
+  color: rgb(81, 128, 167);
 }
 body {
   font-family: 'Poppins', sans-serif;
@@ -19,7 +19,7 @@ body {
 header{
   display: flex;
   width: 90%;
-  height: 10vh;
+  height: 14vh;
   margin: auto;
   align-items: center;
 }
@@ -28,6 +28,7 @@ header{
 }
 .logo-container{
   flex: 1;
+  justify-content: space-evenly;
 }
 .logo{
   font-weight: 5px;
@@ -41,12 +42,18 @@ nav{
 }
 .nav-link{
   color: grey;
-  font-size: 18px;
+  font-size: 20px;
   text-decoration: none;
 }
 .cart{
   flex: 1;
   justify-content: flex-end;
+}
+.cart img{
+  height: 4vh;
+}
+.logo-container img{
+  height: 13vh;
 }
 .presentation{
   display: flex;
@@ -98,4 +105,21 @@ nav{
 .cover img{
   height: 70vh;
   filter: drop-shadow(0px 5px 3px black);
+  animation: drop 1.5s ease;
+}
+body{
+  background-image: url("background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@keyframes drop{
+  0%{
+    opacity: 0;
+    transform: translateY(-80px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0px);
+  }
 }
